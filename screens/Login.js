@@ -12,20 +12,20 @@ const Login = ({ navigation }) => {
         setIsSecured(!isSecured);
     }
     const handleLogin = () => {
-        if(email.length === 0){
-            setErrorMessage('The email should not be empty');
-            return false
-        }
-        const req = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
-        if(req === false){
-            setErrorMessage('The email is not valid, use a real email.')
-            return false;
-        }
+            // if(email.length === 0){
+            //     setErrorMessage('The email should not be empty');
+            //     return false
+            // }
+            // const req = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+            // if(req === false){
+            //     setErrorMessage('The email is not valid, use a real email.')
+            //     return false;
+            // }
 
-        if(password.length === 0){
-            setErrorMessage('The password should not be empty');
-            return false
-        }
+            // if(password.length === 0){
+            //     setErrorMessage('The password should not be empty');
+            //     return false
+            // }
 
         navigation.navigate('Drawer');
 
@@ -76,7 +76,6 @@ const styles = StyleSheet.create({
     textButton: {
         color: '#fff',
         fontSize: 18,
-
     },
     eyeButton: {
         position: 'absolute',

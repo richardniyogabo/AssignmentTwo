@@ -20,9 +20,9 @@ const Tabs = () => {
         name="Message" 
         component={Message} 
         options={{
-            tabBarLabel: 'Messages',
+            tabBarLabel: 'Products',
             tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="email" color={color} size={26} />
+              <MaterialCommunityIcons name="cart" color={color} size={26} />
             ),
         }}  
       />
@@ -40,9 +40,9 @@ const Tabs = () => {
         name="Account" 
         component={Account}
         options={{
-            tabBarLabel: 'Account',
+            tabBarLabel: 'Cards',
             tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="account-circle" color={color} size={26} />
+              <MaterialCommunityIcons name="cards" color={color} size={26} />
             ),
         }}   
       />

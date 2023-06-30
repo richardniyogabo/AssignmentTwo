@@ -3,8 +3,10 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Tabs from './Tabs';
 import Contact from './DrawerScreens/Contact';
 import UpdateProfile from './DrawerScreens/UpdateProfile';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Drawer = createDrawerNavigator();
+const Stack = createNativeStackNavigator();
 
 const MyDrawer = () => {
     return (
@@ -15,7 +17,7 @@ const MyDrawer = () => {
             }} />
             <Drawer.Screen name="Support" component={Contact} options={{ 
                 headerShown: true,
-                title: 'Support',
+                title: 'Gallery',
                 headerStyle: {
                     backgroundColor: 'transparent',
                 },

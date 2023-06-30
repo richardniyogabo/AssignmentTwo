@@ -44,10 +44,6 @@ const UpdateProfile = () => {
         const showDatepicker = () => {
         showMode('date');
         };
-
-        const showTimepicker = () => {
-        showMode('time');
-        };
     
 
     return (
