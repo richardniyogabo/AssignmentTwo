@@ -98,7 +98,7 @@ const Message = ({ navigation }) => {
                 refreshing={refreshing}
                 onRefresh={() => setRefreshing(true)}
                 renderItem={({item, idx}) => 
-                <TouchableOpacity  key={idx} style={{
+                <TouchableOpacity onPress={() => navigation.navigate('Details', { item })} key={idx} style={{
                     width: '90%',
                     height: 90,
                     borderRadius: 10,

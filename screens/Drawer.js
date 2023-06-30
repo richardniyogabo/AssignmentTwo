@@ -4,6 +4,7 @@ import Tabs from './Tabs';
 import Contact from './DrawerScreens/Contact';
 import UpdateProfile from './DrawerScreens/UpdateProfile';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Details from './Details';
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -26,6 +27,11 @@ const MyDrawer = () => {
                 headerShown: true,
                 title: 'Profile'
             }} />
+            <Stack.Screen name='Details' component={Details} options={{
+                drawerLabel: () => null,
+                title: null,
+                drawerIcon: () => null
+            }}/>
         </Drawer.Navigator>
     )
 }
