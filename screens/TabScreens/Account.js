@@ -24,6 +24,7 @@ const Account = () => {
                     style={styles.cardImg}
                     source={{ uri: card.src }}
                     />
+
                 </View>
                 )}
             />
